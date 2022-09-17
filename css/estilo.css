@@ -1,0 +1,244 @@
+*{/*Estilos generales*/
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;/*Para que las cajas no se desborden una con otras*/
+/*Letras 
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedorPadre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    }.contenedorHeader{
+        background-image: url(../img/Fondo/fondoHeader.jpg);
+        background-position: end;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        }.contenedorMenu{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+        
+            }.contenedorLogo{
+               
+                flex: 1 1 auto;
+                text-align: center;
+                
+                }.contenedorLogo img{
+
+                   
+            }.contenedorNav{
+            flex: 6 1 auto;
+                }.contenedorNav a{
+                    width: auto;
+                    text-decoration: none;
+                    background-color: rgba(128, 128, 128, 0.438);
+                    color: white; 
+                    font-family: 'Lora', serif;
+                    font-weight: 300;
+                    text-align: center;
+                    line-height: 1.8;                   
+                    
+
+            }.contenedorRedes{
+                flex: 1 1 auto;
+               
+                }.contenedorRedes a{
+                    margin: 0;
+                    padding: 0;
+        
+        }.contenedorTitulo{
+                    height: 286px;
+                    align-items: center; /*No estaria centrando los h1 y h2 en el medio del contenedor*/
+                    
+
+            }.contenedorTitulo h1{
+                font-family: 'Lora', serif;
+                color:#fff;
+                font-weight: 300;
+                line-height: 1.6;
+                border-bottom: #fff solid;
+                border-width: 5px;
+                text-align: center;
+            }.contenedorTitulo h2{
+                font-family: 'Lora', serif;
+                color:#fff;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+
+
+    .contenedorCentro{
+        background-image: url(../img/Fondo/fondoCentro.jpg);
+        
+        background-attachment: contain;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        }.contenedorPublicidad{
+            background:rgba(241, 213, 160, 0.473);
+            flex: 1 1 auto;
+        
+            }.contenedorPublicidad1{
+                flex: 1 1 auto;
+
+                }.contenedorPublicidad1 img{
+                    
+
+            }.contenedorPublicidad2{
+                flex: 1 1 auto;
+               
+                }.contenedorPublicidad2 img{
+                   
+                
+        }.contenedorCuerpo{
+                background: rgba(241, 213, 160, 0.473);
+                flex: 50 1 auto;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+            }.Articulo1{
+                
+                flex: 1 1 100%;
+                text-align: center;
+                color:aliceblue;
+
+                }.Articulo1 h1{
+                    font-family: 'Lora', serif;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    margin-top: -130px;
+            
+                }.Articulo1 h3{
+                    font-family: 'Lora', serif;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+
+                }.Articulo1 img{
+                    
+            
+          
+            }.Articulo2{
+               
+                flex: 1 1 100%;
+                text-align: center;
+                color:aliceblue;
+
+                }.Articulo2 h1{
+                    font-family: 'Lora', serif;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    margin-top: -130px;
+
+                }.Articulo2 h3{
+                    font-family: 'Lora', serif;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                }.Articulo2 img{
+                    
+      
+                    
+            }.Articulo3{
+                background-color: rgba(207, 59, 59, 0.425);/* La imagen deberia estar centrada dentro de lo negro y luego borrar el fondo*/
+                flex: 1 1 100%;
+                text-align: center;
+                color:aliceblue
+                
+            
+                }.Articulo3 h1{
+                    font-family: 'Lora', serif;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    margin-top: -150px;
+
+                }.Articulo3 h3{
+                    font-family: 'Lora', serif;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+
+                }.Articulo3 img{
+               
+                }
+
+
+            .contenedorNavegacion{
+                flex: 1 1 100%;
+        }
+
+
+
+    .contenedorFooter{
+        border-top: black solid;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        }.contenedorDerechos{
+            
+            flex: 4 1 auto;
+            
+        }.contenedorDatos{
+            
+            flex: 1 1 auto;
+        }
+
+        @media all and (max-width: 800px)  {
+    
+            .contenedorMenu{
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .contenedorCentro{
+                flex-direction: column;
+            }
+        
+        
+            .contenedorFooter{
+                flex-direction: column;
+                
+            }
+        }
+        
+        @media all and (max-width: 650px){
+            .contenedorCuerpo{
+                display: flex;
+                justify-content: center;
+            }
+        
+            .contenedorPublicidad{
+                display: flex;
+                justify-content: center;
+        
+            }
+        
+        }
+        
+        
+        @media all and (max-width: 400px){
+        
+            .contenedorPublicidad{
+                flex-direction: column;
+        
+            }
+        
+        }
