@@ -63,10 +63,10 @@ body{
         }.contenedorTitulo{
                     height: 286px;
                     align-items: center; /*No estaria centrando los h1 y h2 en el medio del contenedor*/
-                    
+                    font-family: 'Lora', serif;
 
             }.contenedorTitulo h1{
-                font-family: 'Lora', serif;
+                
                 color:#fff;
                 font-weight: 300;
                 line-height: 1.6;
@@ -74,7 +74,7 @@ body{
                 border-width: 5px;
                 text-align: center;
             }.contenedorTitulo h2{
-                font-family: 'Lora', serif;
+        
                 color:#fff;
                 font-weight: 300;
                 text-align: center;
@@ -85,10 +85,8 @@ body{
 
     .contenedorCentro{
         background-image: url(../img/Fondo/fondoCentro.jpg);
-        
         background-attachment: contain;
         background-size: cover;
-
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -111,73 +109,327 @@ body{
                 
         }.contenedorCuerpo{
                 background: rgba(241, 213, 160, 0.473);
+                font-family: 'Lora', serif;
                 flex: 50 1 auto;
                 flex-direction: row;
                 flex-wrap: wrap;
                 
-            }.Articulo1{
                 
+            }.Articulo1{
+                background-image: url(../img/portada1.png);
+                background-position: end;
+                background-attachment: contain;
+                background-size: cover;
+                height: 350px;
                 flex: 1 1 100%;
-                text-align: center;
-                color:aliceblue;
-
+                
+                
                 }.Articulo1 h1{
-                    font-family: 'Lora', serif;
-                    font-size: 13px;
+                    
+                    font-size: 35px;
                     letter-spacing: 1px;
-                    margin-top: -130px;
-            
-                }.Articulo1 h3{
-                    font-family: 'Lora', serif;
-                    font-size: 13px;
-                    letter-spacing: 1px;
+                    background-color: rgba(240, 248, 255, 0.479);
+                    text-decoration: underline;
+                    width: 500px;
+                    color: black;
+                    margin-top: 70px;
+                    margin-left: 700px;
+                    text-align: center;
+                 
+                    
+
+                }.Articulo1 a{
+                    text-decoration: none;
+                    
+                    
+                    
 
                 }.Articulo1 img{
                     
             
           
             }.Articulo2{
-               
+                background-image: url(../img/portada2.png);
+                background-position: end;
+                background-attachment: contain;
+                background-size: cover;
+                height: 350px;
                 flex: 1 1 100%;
-                text-align: center;
-                color:aliceblue;
+                text-align: left;
+             
 
                 }.Articulo2 h1{
-                    font-family: 'Lora', serif;
-                    font-size: 13px;
+                    
+                    font-size: 35px;
                     letter-spacing: 1px;
-                    margin-top: -130px;
+                    background-color: rgba(240, 248, 255, 0.479);
+                    text-decoration: underline;
+                    width: 700px;
+                    color: black;
+                    margin-top: 90px;
+                    margin-left: 80px;
+                    text-align: center;
+                 
+                    
 
-                }.Articulo2 h3{
-                    font-family: 'Lora', serif;
-                    font-size: 13px;
-                    letter-spacing: 1px;
+                }.Articulo2 a{
+                    text-decoration: none;
+
                 }.Articulo2 img{
                     
       
                     
             }.Articulo3{
-                background-color: rgba(207, 59, 59, 0.425);/* La imagen deberia estar centrada dentro de lo negro y luego borrar el fondo*/
+                background-image: url(../img/portada3.png);
+                background-position: end;
+                background-attachment: contain;
+                background-size: cover;
+                height: 350px;
                 flex: 1 1 100%;
-                text-align: center;
-                color:aliceblue
+                text-align: left;
                 
             
                 }.Articulo3 h1{
-                    font-family: 'Lora', serif;
-                    font-size: 13px;
+                    
+                    font-size: 35px;
                     letter-spacing: 1px;
-                    margin-top: -150px;
+                    background-color: rgba(240, 248, 255, 0.479);
+                    text-decoration: underline;
+                    width: 550px;
+                    color: black;
+                    margin-top: 90px;
+                    margin-left: 70px;
+                    text-align: center;
+                    
+                    
 
-                }.Articulo3 h3{
-                    font-family: 'Lora', serif;
-                    font-size: 13px;
-                    letter-spacing: 1px;
+                }.Articulo3 a{
+                    text-decoration: none;
 
                 }.Articulo3 img{
                
                 }
 
+            .contenedorContacto{
+                width: 100%;
+                max-width: 1328px;
+                margin: 0;
+                padding: 0;
+                
+                display: grid;
+                grid-template-columns: repeat(2 , 1fr);
+                grid-template-rows: repeat(2, 1 fr);
+               
+                grid-template-areas: "formulario direcciones"
+                                     "formulario mapa";
+                
+         
+        
+            }
+
+            .contenedorFormulario{
+                
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
+                color: black;
+                /*grid-column-start: 1;
+                grid-row: span 2;*/
+                grid-area: formulario;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+
+            }
+
+            .contenedorFormulario .botones{
+                text-align: center;
+            }
+
+            .contenedorDirecciones{
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
+                color: black;
+                /*grid-column-start: 2;
+                grid-row-start: 1;*/
+                grid-area: direcciones;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            
+                
+                
+                
+                
+            } .contenedorDirecciones a{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                color: black;
+                
+                
+            }
+
+            .contenedorMapa{
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
+                color: black;
+                /*grid-column-start: 2;
+                grid-row-start: 2;*/
+                grid-area: mapa;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+              
+
+            }
+
+            .contenedorNosotros{
+                width: 100%;
+                max-width: 1328px;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(1 , 1fr);
+                grid-template-rows: repeat(2, 1 fr);
+                grid-template-areas: "historia"
+                                     "proveedores";
+
+            }
+
+
+            .contenedorHistoria{
+
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
+                grid-area: historia;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            
+
+
+            .contenedorProveedores{
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
+                grid-area: proveedores;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+                
+            }
+
+
+            .contenedorProveedores .gridLogos{
+                width: 100%;
+                max-width: 1328px;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(4 , 1fr);
+                grid-template-rows: repeat(2, 1 fr);
+                grid-template-areas: "marca01 marca02 marca03 marca04"
+                                     "marca05 marca06 marca07 marca08";
+            }
+
+
+  
+
+            .contenedorProveedores .tituloMarcas{
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .contenedorProveedores .marca01{
+                grid-area: marca01;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+
+            .contenedorProveedores .marca02{
+                grid-area: marca02;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+            
+            .contenedorProveedores .marca03{
+                grid-area: marca03;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+            
+            .contenedorProveedores .marca04{
+                grid-area: marca04;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+            
+            .contenedorProveedores .marca05{
+                grid-area: marca05;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+            
+            .contenedorProveedores .marca06{
+                grid-area: marca06;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+            
+            .contenedorProveedores .marca07{
+                grid-area: marca07;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+            
+            .contenedorProveedores .marca08{
+                grid-area: marca08;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
 
             .contenedorNavegacion{
                 flex: 1 1 100%;
@@ -201,7 +453,7 @@ body{
             flex: 1 1 auto;
         }
 
-        @media all and (max-width: 800px)  {
+        @media all and (max-width: 900px)  {
     
             .contenedorMenu{
                 flex-direction: column;
@@ -217,6 +469,25 @@ body{
                 flex-direction: column;
                 
             }
+
+           /* .contenedorFormulario{
+                grid-column: 1 / -1;
+                justify-content: center;
+            }
+
+            .contenedorDirecciones{
+                grid-column: 1 / -1;
+             
+            }
+            */
+            .contenedorContacto{
+
+                grid-template-areas: "formulario" 
+                                     "direcciones"
+                                     "mapa";
+            }
+
+
         }
         
         @media all and (max-width: 650px){

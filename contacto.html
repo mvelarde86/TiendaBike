@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap 5.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Tienda Bike</title>
+
+</head>
+<body>
+    <div class="contenedorPadre">
+        <header class="contenedorHeader">
+            <div class="contenedorMenu">
+                <div class="contenedorLogo">
+                    <a href="index.html"> <img src="img/Logo4.png" alt="LogoEmpresa"></a>
+                </div>
+                <div class="contenedorNav">
+                    <a href="bicicletas.html"><i class="fa-solid fa-person-biking"></i>Bicicletas</a>
+                    <a href="accesorios.html"><i class="fa-solid fa-vest"></i>Accesorios</a>
+                    <a href="nosotros.html"><i class="fa-solid fa-users-rectangle"></i>Nosotros</a>
+                    <a href="contacto.html"><i class="fa-solid fa-headset"></i>Contacto</a>
+                </div>
+                <div class="contenedorRedes">
+                    <a href="https://www.facebook.com"><img src="img/redes/facebook.png" width= 50px height=50px></a>
+                    <a href="https://www.instagram.com"><img src="img/redes/instagram.png" width= 50px height=50px></a>
+                    <a href="https://www.twitter.com"><img src="img/redes/twitter.png" width= 50px height=50px></a>
+                    <a href="https://www.whatsapp.com"><img src="img/redes/whatsapp.png" width= 50px height=50px    ></a>
+                </div>
+            </div>
+            <div class="contenedorTitulo">
+                <h1>Bienvenidos a Tienda Bike</h1>
+                <h2>Ride the Life</h2>
+            </div>
+        </header>
+
+        <section class="contenedorCentro">
+            <aside class="contenedorPublicidad">
+                <div class="contenedorPublicidad1">
+                    <h1>Publicidad</h1>
+                    <a href="https://www.buenosaires.gob.ar/ecobici/pedalea-la-ciudad" ><img src="img/BA2016.png" alt="BSAS" ></a>
+                </div>
+                <div class="contenedorPublicidad2">
+                    <a href="https://www.buenosaires.gob.ar/ecobici/pedalea-la-ciudad" ><img src="img/BA2016.png" alt="BSAS"></a>
+                </div>
+            </aside>
+
+            <div class="contenedorCuerpo">
+                <div class="contenedorContacto">
+                   
+                    <div class="contenedorFormulario">
+                        <form action=""> 
+                            <table class="tabla">
+                            <tr><th colspan="2">Contacto:</th>
+                            <tr><th class="col1"><label for="nombre"> Nombre: </label></th> <th class="col2"><input type="text" size="40" name="nombre" id="nombre" maxlength="25" required></th></tr>
+                            <tr><th class="col1"><label for="apellido"> Apellido: </label></th> <th class="col2"><input type="text" size="40" name="apellido" id="apellido" maxlength="25" required></th></tr>
+                            <tr><th class="col1"><label for="email"> Correo Electronico: </label></th> <th class="col2"><input type="email" size="40" name="email" id="email" required></th></tr>
+                            <tr><th class="col1"><label> Género: </label></th> <th class="col2"><input type="radio" name="genero" value="Masculino" required><label> Masculino </label> <br> <input type="radio" name="genero" value="Femenino" required><label> Femenino </label> <br> <input type="radio" name="genero" value="Otro" required> <label> Otro </label> </th></tr>
+                            <tr><th class="col1"> Tipo de Consulta: </th> <th class="col2" ><select name="consulta"  id="tipoConsulta"><option value="pProductos"> Problemas con el Producto </option><option value="pSitioWeb"> Problemas con el SitioWeb </option><option value="pOtros"> Otros Problemas</option></select></th></tr>
+                            <tr><th class="col1"> Escriba su Consulta: </th> <th class="col2"><textarea name="comentario" rows="10" cols="40" placeholder="Escribe tu consulta..." required></textarea></th></tr>
+                            <tr><th class="botones" colspan="2"><input type="submit" value="Enviar Datos" ><span></span><input type="reset" value="Borrar Datos"></th></tr>
+                            
+                        </table>
+                        </form>
+                    </div>
+                
+                    <div class="contenedorDirecciones">
+                      <p>Horarios de L a S de 10hs. a 13hs. y de 14hs a 18hs.</p>
+                      <p><a href="https://www.instagram.com.ar"><img src="img/redes/instagram.png" width= 50px height=50px></a>Seguinos en Instagram. </p>
+                      <p><a href="https://wa.me/5491121780900"><img src="img/redes/whatsapp.png" width= 50px height=50px></a> ( +54 9 ) 11 2178 - 0900</p>  
+                      <p><a href="mailto:info@tiendabike.com.ar"><img src="img/redes/correo.png" width= 50px height=50px>info@tiendabike.com.ar</a></p>
+                      <p><a href=""><img src="img/redes/ubicacion.png" width= 50px height=50px></a>Av. Triunvirato 4150 CABA, Buenos Aires, Argentina.</p>        
+
+                    </div>
+                
+                    <div class="contenedorMapa">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0004842591493!2d-58.4797362!3d-34.578854299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66ed02939e3%3A0x5595dea69eaa286b!2sAv%20Triunvirato%204150%2C%20C1431FBR%20CABA!5e0!3m2!1ses!2sar!4v1664425201959!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="contenedorFooter">
+            <div class="contenedorDerechos">
+
+                <p>Copyright Tienda Bike 2022. / Todos los derechos reservados.</p>
+            </div>
+            <div class="contenedorDatos">
+
+                <p>Empresa: Tienda Bike <br>
+                Teléfono: +54 11 2178-0900 <br>
+                eMail: info@tiendabike.com.ar</p>
+
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
