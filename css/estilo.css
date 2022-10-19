@@ -351,7 +351,7 @@ body{
                 display: grid;
                 grid-template-columns: repeat(4 , 1fr);
                 grid-template-rows: repeat(2, 1 fr);
-                grid-template-areas: "marca marca marca03 marca04"
+                grid-template-areas: "marca01 marca02 marca03 marca04"
                                      "marca05 marca06 marca07 marca08";
             }
 
@@ -443,11 +443,11 @@ body{
                 
             }
 
-            .menuAccesorios{
+            .menuProductos{
                 background: rgba(241, 213, 160, 0.473);
             }
 
-            .menuAccesorios .tituloMenu{
+            .menuProductos .tituloMenu{
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -455,7 +455,7 @@ body{
                 text-decoration: underline;
             }
 
-            .menuAccesorios .gridMenuAccesorios{
+            .menuProductos .gridMenuProducto{
                 width: 100%;
                 display: grid;
                 grid-template-columns: repeat(1 , 1fr);
@@ -463,9 +463,10 @@ body{
                 grid-template-areas: "Accesorio"
                                      "Accesorio"
                                      "Accesorio";
+                ;
             }
 
-            .menuAccesorios .gridMenuAccesorios .Accesorio{
+            .menuProductos .gridMenuProducto .Producto{
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 display: grid;
@@ -475,15 +476,29 @@ body{
                                      "des";
                 
             }
+            .menuProductos .gridMenuProducto .Producto a{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                color: black;
+                
+            }
 
-            .menuAccesorios .gridMenuAccesorios .Accesorio .img{
+            .menuProductos .gridMenuProducto .Producto .img{
                 grid-area: img;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
             }
-            .menuAccesorios .gridMenuAccesorios .Accesorio .des{
+
+            
+            .menuProductos .gridMenuProducto .Producto img{
+                width: 85%;
+                height: 130px;                
+            }    
+
+            .menuProductos .gridMenuProducto .Producto .des{
                 margin: -10%;
                 grid-area: des;
                 display: flex;
@@ -492,18 +507,30 @@ body{
                 flex-direction: column;
             }
 
-            .gridAccesorios{
+            .gridProductos{
                 width: 100%;
                 display: grid;
                 grid-template-columns: repeat(3 , 1fr);
                 grid-template-rows: repeat(4, 1 fr);
-                grid-template-areas: "Producto Producto Producto"
+                grid-template-areas: "titulo titulo titulo"
+                                     "Producto Producto Producto"
                                      "Producto Producto Producto"
                                      "Producto Producto Producto"
                                      "nav nav nav";
             }
 
-            .gridAccesorios .Producto{
+            .gridProductos .tituloGrid{
+                grid-area: titulo;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
+
+            }
+
+            .gridProductos .Producto{
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 display: grid;
@@ -516,16 +543,19 @@ body{
 
             }
 
-            .gridAccesorios .Producto .img{
-                background-color: black;
+            .gridProductos .Producto .img{
                 grid-area: img;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
             }
+            .gridProductos .Producto .img img{
+                width: 250px;
+                height: 180px;                
+            }
 
-            .gridAccesorios .Producto .des{
+            .gridProductos .Producto .des{
                 margin-top: -10%;
                 grid-area: des;
                 display: flex;
@@ -535,7 +565,7 @@ body{
                 font-family: 'Montserrat', sans-serif;
             }
 
-            .gridAccesorios .Producto .precio{
+            .gridProductos .Producto .precio{
                 margin-top: -10%;
                 grid-area: pre;
                 display: flex;
@@ -546,7 +576,7 @@ body{
                 font-family: 'Montserrat', sans-serif;
             }
 
-            .gridAccesorios .Producto .info{
+            .gridProductos .Producto .info{
                 margin-top: -15%;
                 grid-area: inf;
                 display: flex;
