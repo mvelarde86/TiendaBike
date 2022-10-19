@@ -31,7 +31,7 @@ body{
             flex-wrap: nowrap;
             flex-direction: row;
             align-items: center;
-        
+            
             }.contenedorLogo{
                
                 flex: 1 1 auto;
@@ -247,6 +247,18 @@ body{
                 text-align: center;
             }
 
+            .tabla .input_error{
+                font-size: 12px;
+
+                display: none;
+
+            }
+            .tabla .input_borde:focus{
+                border: 3px solid rgb(52, 165, 240);
+                outline: none;
+                box-shadow: 3px 0px 30px ;
+            }
+
             .contenedorDirecciones{
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
@@ -339,7 +351,7 @@ body{
                 display: grid;
                 grid-template-columns: repeat(4 , 1fr);
                 grid-template-rows: repeat(2, 1 fr);
-                grid-template-areas: "marca01 marca02 marca03 marca04"
+                grid-template-areas: "marca marca marca03 marca04"
                                      "marca05 marca06 marca07 marca08";
             }
 
@@ -431,8 +443,127 @@ body{
                 
             }
 
+            .menuAccesorios{
+                background: rgba(241, 213, 160, 0.473);
+            }
+
+            .menuAccesorios .tituloMenu{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-decoration: underline;
+            }
+
+            .menuAccesorios .gridMenuAccesorios{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1 , 1fr);
+                grid-template-rows: repeat(3, 1 fr);
+                grid-template-areas: "Accesorio"
+                                     "Accesorio"
+                                     "Accesorio";
+            }
+
+            .menuAccesorios .gridMenuAccesorios .Accesorio{
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
+                display: grid;
+                grid-template-columns: repeat(1 , 1fr);
+                grid-template-rows: repeat(4, 1 fr);  
+                grid-template-areas: "img"
+                                     "des";
+                
+            }
+
+            .menuAccesorios .gridMenuAccesorios .Accesorio .img{
+                grid-area: img;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .menuAccesorios .gridMenuAccesorios .Accesorio .des{
+                margin: -10%;
+                grid-area: des;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .gridAccesorios{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3 , 1fr);
+                grid-template-rows: repeat(4, 1 fr);
+                grid-template-areas: "Producto Producto Producto"
+                                     "Producto Producto Producto"
+                                     "Producto Producto Producto"
+                                     "nav nav nav";
+            }
+
+            .gridAccesorios .Producto{
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
+                display: grid;
+                grid-template-columns: repeat(1 , 1fr);
+                grid-template-rows: repeat(4, 1 fr);  
+                grid-template-areas: "img"
+                                     "des"
+                                     "inf"
+                                     "pre";
+
+            }
+
+            .gridAccesorios .Producto .img{
+                background-color: black;
+                grid-area: img;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .gridAccesorios .Producto .des{
+                margin-top: -10%;
+                grid-area: des;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;  
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .gridAccesorios .Producto .precio{
+                margin-top: -10%;
+                grid-area: pre;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;          
+                font-size: larger;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .gridAccesorios .Producto .info{
+                margin-top: -15%;
+                grid-area: inf;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+           
+            }
+
             .contenedorNavegacion{
-                flex: 1 1 100%;
+                grid-area: nav;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 50px;
         }
 
 
@@ -453,7 +584,7 @@ body{
             flex: 1 1 auto;
         }
 
-        @media all and (max-width: 900px)  {
+        @media all and (max-width: 1024px)  {
     
             .contenedorMenu{
                 flex-direction: column;
@@ -490,7 +621,7 @@ body{
 
         }
         
-        @media all and (max-width: 650px){
+        @media all and (max-width: 768px){
             .contenedorCuerpo{
                 display: flex;
                 justify-content: center;
@@ -505,7 +636,7 @@ body{
         }
         
         
-        @media all and (max-width: 400px){
+        @media all and (max-width: 480px){
         
             .contenedorPublicidad{
                 flex-direction: column;

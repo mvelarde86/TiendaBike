@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap 5.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.css">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap">
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/formulario.js"></script>
     <title>Tienda Bike</title>
 
 </head>
@@ -53,16 +53,16 @@
                 <div class="contenedorContacto">
                    
                     <div class="contenedorFormulario">
-                        <form action=""> 
+                        <form id="tiendaForm"> <!-- action="https://formspree.io/f/mvoyqvwk" method="POST"> -->
                             <table class="tabla">
                             <tr><th colspan="2">Contacto:</th>
-                            <tr><th class="col1"><label for="nombre"> Nombre: </label></th> <th class="col2"><input type="text" size="40" name="nombre" id="nombre" maxlength="25" required></th></tr>
-                            <tr><th class="col1"><label for="apellido"> Apellido: </label></th> <th class="col2"><input type="text" size="40" name="apellido" id="apellido" maxlength="25" required></th></tr>
-                            <tr><th class="col1"><label for="email"> Correo Electronico: </label></th> <th class="col2"><input type="email" size="40" name="email" id="email" required></th></tr>
-                            <tr><th class="col1"><label> Género: </label></th> <th class="col2"><input type="radio" name="genero" value="Masculino" required><label> Masculino </label> <br> <input type="radio" name="genero" value="Femenino" required><label> Femenino </label> <br> <input type="radio" name="genero" value="Otro" required> <label> Otro </label> </th></tr>
-                            <tr><th class="col1"> Tipo de Consulta: </th> <th class="col2" ><select name="consulta"  id="tipoConsulta"><option value="pProductos"> Problemas con el Producto </option><option value="pSitioWeb"> Problemas con el SitioWeb </option><option value="pOtros"> Otros Problemas</option></select></th></tr>
-                            <tr><th class="col1"> Escriba su Consulta: </th> <th class="col2"><textarea name="comentario" rows="10" cols="40" placeholder="Escribe tu consulta..." required></textarea></th></tr>
-                            <tr><th class="botones" colspan="2"><input type="submit" value="Enviar Datos" ><span></span><input type="reset" value="Borrar Datos"></th></tr>
+                            <tr><th class="col1"><label for="nombre"> Nombre: </label></th> <th class="col2"><input class="input_borde" type="text" size="40" name="nombre" id="nombre" maxlength="25"><p class="input_error">El nombre debe contener</p></th></tr>
+                            <tr><th class="col1"><label for="apellido"> Apellido: </label></th> <th class="col2"><input class="input_borde" type="text" size="40" name="apellido" id="apellido" maxlength="25"><p class="input_error">El apellido debe contener</p></th></tr>
+                            <tr><th class="col1"><label for="email"> Correo Electronico: </label></th> <th class="col2"><input class="input_borde" type="email" size="40" name="email" id="email"><p class="input_error">El correo debe contener</p></th></tr>
+                            <tr><th class="col1"><label> Género: </label></th> <th class="col2"><input type="radio" name="genero" id="genero" value="Masculino" ><label> Masculino </label> <br> <input type="radio" name="genero" id="genero" value="Femenino" ><label> Femenino </label> <br> <input type="radio" name="genero" id="genero" value="Otro" > <label> Otro </label> </th></tr>
+                            <tr><th class="col1"> Tipo de Consulta: </th> <th class="col2" ><select name="consulta"  id="tipoConsulta" class="input_borde"><option value="pProductos"> Problemas con el Producto </option><option value="pSitioWeb"> Problemas con el SitioWeb </option><option value="pOtros"> Otros Problemas</option></select></th></tr>
+                            <tr><th class="col1"> Escriba su Consulta: </th> <th class="col2"><textarea class="input_borde" name="comentario" id="comentario" rows="10" cols="40" placeholder="Escribe tu consulta..." ></textarea></th></tr>
+                            <tr><th class="botones" colspan="2"><input type="submit" onclick="validarFormulario()" id="boton" value="Enviar Datos" ><span></span><input type="reset" value="Borrar Datos"></th></tr>
                             
                         </table>
                         </form>
@@ -82,9 +82,6 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0004842591493!2d-58.4797362!3d-34.578854299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66ed02939e3%3A0x5595dea69eaa286b!2sAv%20Triunvirato%204150%2C%20C1431FBR%20CABA!5e0!3m2!1ses!2sar!4v1664425201959!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                    
                     </div>
-
-
-
 
                 </div>
             </div>
