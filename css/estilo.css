@@ -16,63 +16,68 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
 
     }.contenedorHeader{
         background-image: url(../img/Fondo/fondoHeader.jpg);
-        background-position: end;
-        background-attachment: contain;
-        background-size: cover;
+        background-size:auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
+        width: 98%;
+        align-items: center;
 
         }.contenedorMenu{
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-wrap: nowrap;
             flex-direction: row;
             align-items: center;
+            width: 98%;
             
             }.contenedorLogo{
-               
                 flex: 1 1 auto;
                 text-align: center;
-                
-                }.contenedorLogo img{
-
                    
             }.contenedorNav{
             flex: 6 1 auto;
+            text-align: center;
+
                 }.contenedorNav a{
                     width: auto;
                     text-decoration: none;
-                    background-color: rgba(128, 128, 128, 0.438);
+                    background-color: rgba(128, 128, 128, 0.735);
                     color: white; 
                     font-family: 'Lora', serif;
                     font-weight: 300;
-                    text-align: center;
                     line-height: 1.8;                   
                     
 
             }.contenedorRedes{
                 flex: 1 1 auto;
-               
+                text-align: center;
                 }.contenedorRedes a{
                     margin: 0;
                     padding: 0;
+
         
         }.contenedorTitulo{
-                    height: 286px;
-                    align-items: center; /*No estaria centrando los h1 y h2 en el medio del contenedor*/
+                    margin:-20px;
+                    width: 50%;
+                    align-content: center;                    
                     font-family: 'Lora', serif;
 
             }.contenedorTitulo h1{
-                
                 color:#fff;
                 font-weight: 300;
                 line-height: 1.6;
                 border-bottom: #fff solid;
                 border-width: 5px;
                 text-align: center;
+
             }.contenedorTitulo h2{
         
                 color:#fff;
@@ -80,135 +85,125 @@ body{
                 text-align: center;
                 line-height: 1.6;
             }
+            .animacion{
+                animation: flash; 
+                animation-duration: 1s;
+            }
 
 
 
     .contenedorCentro{
+        width: 98%;
         background-image: url(../img/Fondo/fondoCentro.jpg);
-        background-attachment: contain;
         background-size: cover;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
 
         }.contenedorPublicidad{
+            margin: 1%;
             background:rgba(241, 213, 160, 0.473);
-            flex: 1 1 auto;
+            text-align: center;
+            width: 18%;
+            
         
             }.contenedorPublicidad1{
-                flex: 1 1 auto;
+                text-align: center;
 
                 }.contenedorPublicidad1 img{
-                    
+                    width: 150px;
+                    height: 100px;
 
             }.contenedorPublicidad2{
-                flex: 1 1 auto;
-               
+             
+                text-align: center;
+
                 }.contenedorPublicidad2 img{
-                   
+                    width: 150px;
+                    height: 100px;
                 
         }.contenedorCuerpo{
+                margin: 1%;
                 background: rgba(241, 213, 160, 0.473);
                 font-family: 'Lora', serif;
-                flex: 50 1 auto;
+                width: 78%;
                 flex-direction: row;
                 flex-wrap: wrap;
+                     
                 
-                
-            }.Articulo1{
-                background-image: url(../img/portada1.png);
-                background-position: end;
-                background-attachment: contain;
+            }.Articulo{
+                width: auto;
+
+            }.Articulo a{
+                text-decoration: none;
+                margin: 0%;
+                padding: 0%;
+
+            }.contenedorImgPor1{
+                background:url(../img/portada1.png);
+                background-size: 100% 100%;
+                background-repeat:no-repeat;
                 background-size: cover;
-                height: 350px;
-                flex: 1 1 100%;
+                height: 315px;
+
+            }
+
+        .contenedorImgPor2{
+            background:url(../img/portada2.png);
+            background-size: 100% 100%;
+            background-repeat:no-repeat;
+            background-size: cover;
+            height: 315px;
+        }
+
+        .contenedorImgPor3{
+            background:url(../img/portada3.png);
+            background-size: 100% 100%;
+            background-repeat:no-repeat;
+            background-size: cover;
+            height: 315px;
+        }
+
                 
                 
-                }.Articulo1 h1{
-                    
+            .Articulo #tituloPortada1{
+                    position: relative;
                     font-size: 35px;
                     letter-spacing: 1px;
                     background-color: rgba(240, 248, 255, 0.479);
                     text-decoration: underline;
-                    width: 500px;
+                    margin-top: 10%;
+                    width: 45%;
                     color: black;
-                    margin-top: 70px;
-                    margin-left: 700px;
-                    text-align: center;
-                 
-                    
+                    text-align: center;    
 
-                }.Articulo1 a{
-                    text-decoration: none;
-                    
-                    
-                    
+                }.Articulo #portada{
+                    position: absolute;
+                    width: 1630px;
+                    height: 355px;
 
-                }.Articulo1 img{
-                    
-            
-          
-            }.Articulo2{
-                background-image: url(../img/portada2.png);
-                background-position: end;
-                background-attachment: contain;
-                background-size: cover;
-                height: 350px;
-                flex: 1 1 100%;
-                text-align: left;
-             
-
-                }.Articulo2 h1{
-                    
+                }.Articulo #tituloPortada2{
+                    position: relative;
                     font-size: 35px;
                     letter-spacing: 1px;
                     background-color: rgba(240, 248, 255, 0.479);
                     text-decoration: underline;
-                    width: 700px;
+                    width: 45%;
                     color: black;
-                    margin-top: 90px;
-                    margin-left: 80px;
                     text-align: center;
-                 
-                    
 
-                }.Articulo2 a{
-                    text-decoration: none;
-
-                }.Articulo2 img{
-                    
-      
-                    
-            }.Articulo3{
-                background-image: url(../img/portada3.png);
-                background-position: end;
-                background-attachment: contain;
-                background-size: cover;
-                height: 350px;
-                flex: 1 1 100%;
-                text-align: left;
-                
-            
-                }.Articulo3 h1{
-                    
+                }.Articulo #tituloPortada3{
+                    position: relative;
                     font-size: 35px;
                     letter-spacing: 1px;
                     background-color: rgba(240, 248, 255, 0.479);
                     text-decoration: underline;
-                    width: 550px;
+                    width: 45%;
                     color: black;
-                    margin-top: 90px;
-                    margin-left: 70px;
                     text-align: center;
-                    
-                    
 
-                }.Articulo3 a{
-                    text-decoration: none;
-
-                }.Articulo3 img{
-               
-                }
+                }                
 
             .contenedorContacto{
                 width: 100%;
@@ -217,7 +212,7 @@ body{
                 padding: 0;
                 
                 display: grid;
-                grid-template-columns: repeat(2 , 1fr);
+                grid-template-columns: repeat(2 , 1 fr);
                 grid-template-rows: repeat(2, 1 fr);
                
                 grid-template-areas: "formulario direcciones"
@@ -307,7 +302,7 @@ body{
                 margin: 0;
                 padding: 0;
                 display: grid;
-                grid-template-columns: repeat(1 , 1fr);
+                grid-template-columns: repeat(1 , 1 fr);
                 grid-template-rows: repeat(2, 1 fr);
                 grid-template-areas: "historia"
                                      "proveedores";
@@ -349,10 +344,11 @@ body{
                 margin: 0;
                 padding: 0;
                 display: grid;
-                grid-template-columns: repeat(4 , 1fr);
+                grid-template-columns: repeat(4 , 1 fr);
                 grid-template-rows: repeat(2, 1 fr);
                 grid-template-areas: "marca01 marca02 marca03 marca04"
                                      "marca05 marca06 marca07 marca08";
+
             }
 
 
@@ -445,6 +441,11 @@ body{
 
             .menuProductos{
                 background: rgba(241, 213, 160, 0.473);
+                margin: 1%;
+                font-family: 'Lora', serif;
+                width: 18%;
+                flex-direction: row;
+                flex-wrap: wrap;
             }
 
             .menuProductos .tituloMenu{
@@ -456,11 +457,12 @@ body{
             }
 
             .menuProductos .gridMenuProducto{
-                width: 100%;
+                width: 95%;
                 display: grid;
-                grid-template-columns: repeat(1 , 1fr);
+                grid-template-columns: repeat(1 , 1 fr);
                 grid-template-rows: repeat(3, 1 fr);
                 grid-template-areas: "Accesorio"
+                                     "Accesorio"
                                      "Accesorio"
                                      "Accesorio";
                 ;
@@ -470,7 +472,7 @@ body{
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 display: grid;
-                grid-template-columns: repeat(1 , 1fr);
+                grid-template-columns: repeat(1 , 1 fr);
                 grid-template-rows: repeat(4, 1 fr);  
                 grid-template-areas: "img"
                                      "des";
@@ -494,8 +496,8 @@ body{
 
             
             .menuProductos .gridMenuProducto .Producto img{
-                width: 250px;
-                height: 180px;             
+                width: 130px;
+                height: 80px;             
             }    
 
             .menuProductos .gridMenuProducto .Producto .des{
@@ -510,9 +512,10 @@ body{
             .gridProductos{
                 width: 100%;
                 display: grid;
-                grid-template-columns: repeat(3 , 1fr);
-                grid-template-rows: repeat(4, 1 fr);
+                grid-template-columns: repeat(3 , 1 fr);
+                grid-template-rows: repeat(6, 1 fr);
                 grid-template-areas: "titulo titulo titulo"
+                                     "Producto Producto Producto"
                                      "Producto Producto Producto"
                                      "Producto Producto Producto"
                                      "Producto Producto Producto"
@@ -525,8 +528,7 @@ body{
                 align-items: center;
                 justify-content: center;
                 flex-direction: row;
-                background-color: rgba(255, 255, 255, 0.678);
-                border-radius: 50px;
+            
 
             }
 
@@ -534,7 +536,7 @@ body{
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 display: grid;
-                grid-template-columns: repeat(1 , 1fr);
+                grid-template-columns: repeat(1 , 1 fr);
                 grid-template-rows: repeat(4, 1 fr);  
                 grid-template-areas: "img"
                                      "des"
@@ -604,6 +606,7 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
 
         }.contenedorDerechos{
             
@@ -614,7 +617,7 @@ body{
             flex: 1 1 auto;
         }
 
-        @media all and (max-width: 1645px)  {
+        @media all and (max-width: 1670px)  {
     
             .contenedorMenu{
                 flex-direction: column;
@@ -624,20 +627,33 @@ body{
             .contenedorCentro{
                 flex-direction: column;
             }
-        
-        
-
-
-           /* .contenedorFormulario{
-                grid-column: 1 / -1;
+            .contenedorCuerpo{
+                width: 98%;
+                display: flex;
                 justify-content: center;
             }
-
-            .contenedorDirecciones{
-                grid-column: 1 / -1;
-             
+            .contenedorPublicidad{
+                width: 98%;
+                display: flex;
+                justify-content: center;
+        
             }
-            */
+            .gridProductos{
+                display: flex;
+                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(2 , 1 fr);
+                grid-template-rows: repeat(8, 1 fr);
+                grid-template-areas: "titulo titulo"
+                                     "Producto Producto"
+                                     "Producto Producto"
+                                     "Producto Producto"
+                                     "Producto Producto"
+                                     "Producto Producto"
+                                     "Producto Producto"
+                                     "nav nav";
+            }
+
             .contenedorContacto{
 
                 grid-template-areas: "formulario" 
@@ -645,48 +661,138 @@ body{
                                      "mapa";
             }
 
+
+            .menuProductos{
+                width: 98%;
+                display: flex;
+                justify-content: center;
+            }
+
             .menuProductos .gridMenuProducto{
-                display: grid;
-                grid-template-columns: repeat(3 , 1fr);
-                grid-template-rows: repeat(1, 1 fr);
+                
                 grid-template-areas: "Accesorio Accesorio Accesorio";
             }
 
+            .menuProductos .gridMenuProducto .Producto .des{
+                font-size: 15px;
+            }
+
+            .contenedorProveedores .gridLogos{
+                width: 75%;
+                grid-template-areas: "marca01 marca02" 
+                                     "marca03 marca04"
+                                     "marca05 marca06" 
+                                     "marca07 marca08";
+                                     
+            }
+
+        
+
 
         }
         
-        @media all and (max-width: 1100px){
+        @media all and (max-width: 1335px){
             .contenedorFooter{
                 flex-direction: column;
-                text-align: center;  
+                text-align: center; 
+            }
+
                 
             }
         
-        }
         
 
  
         
-        @media all and (max-width: 768px){
+        @media all and (max-width: 915px){
+.contenedorTitulo h1{
+                margin: 0;
+                padding: 0;
+                font-size: 25px;
+
+            }.contenedorTitulo h2{
+                font-size: 15px;
+            }
+
+
+
+
+
             .contenedorCuerpo{
+                width: 98%;
                 display: flex;
                 justify-content: center;
             }
         
             .contenedorPublicidad{
+                width: 98%;
                 display: flex;
                 justify-content: center;
         
             }
+
+            .Articulo #tituloPortada1{
+                font-size: 15px;}
+
+            .Articulo #tituloPortada2{
+                font-size: 15px;}
+
+            .Articulo #tituloPortada3{
+                font-size: 15px;}
+
+                .menuProductos .gridMenuProducto{
+                    grid-template-areas: "Accesorio Accesorio" 
+                                         "Accesorio Accesorio";
+                }
+                .menuProductos .gridMenuProducto .Producto img{
+                    width: 100px;
+                    height: 65px;             
+                }  
+
+                .gridProductos .Producto .img img{
+                    width: 185px;
+                    height: 125px;   
+                }
+
+                .gridProductos .Producto .des{
+                    font-size: 15px;
+                }
+                .gridProductos .Producto .precio{
+                    font-size: 15px;
+                }
+
+                .gridProductos{
+                    display: grid;
+                    grid-template-columns: repeat(1 , 1 fr);
+                    grid-template-rows: repeat(14, 1 fr);
+                    grid-template-areas: "titulo"
+                                         "Producto" 
+                                         "Producto"
+                                         "Producto" 
+                                         "Producto"
+                                         "Producto" 
+                                         "Producto"
+                                         "Producto" 
+                                         "Producto"
+                                         "Producto" 
+                                         "Producto"
+                                         "Producto" 
+                                         "Producto"
+                                         "nav";
+                }
+
         
         }
         
         
-        @media all and (max-width: 480px){
-        
-            .contenedorPublicidad{
-                flex-direction: column;
-        
+        @media all and (max-width: 610px){
+    
+
+            .menuProductos .gridMenuProducto{
+                grid-template-areas: "Accesorio" 
+                                     "Accesorio" 
+                                     "Accesorio";
             }
+
         
         }
