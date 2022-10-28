@@ -29,6 +29,9 @@ function enviarFormulario(){
     document.addEventListener("DOMContentLoaded", function(){
    document.getElementById("vForm").addEventListener('submit', validarFormulario)});
 
+   document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("vForm2").addEventListener('submit', validarFormulario)});
+
     function validarFormulario(event) {
         event.preventDefault();
         var nombre = document.getElementById('nombre').value;
