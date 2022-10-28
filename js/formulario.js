@@ -1,7 +1,7 @@
 
 
 function enviarFormulario(){
-        const form = document.querySelector('#tiendaForm')
+        const form = document.querySelector('#vForm')
         
         form.addEventListener('submit', handleSubmit)
 
@@ -27,7 +27,7 @@ function enviarFormulario(){
 
 
     document.addEventListener("DOMContentLoaded", function(){
-   document.getElementById("tiendaForm").addEventListener('submit', validarFormulario)});
+   document.getElementById("vForm").addEventListener('submit', validarFormulario)});
 
     function validarFormulario(event) {
         event.preventDefault();

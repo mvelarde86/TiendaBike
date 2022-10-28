@@ -217,7 +217,7 @@ body{
 
             }
 
-            .contenedorFormulario #tiendaForm2{
+            .contenedorFormulario .tiendaForm2{
                 display: none;
             }
 
@@ -790,20 +790,20 @@ body{
                     font-size: 15px;
                 }
 
-                .contenedorFormulario #tiendaForm{
+                .contenedorFormulario .tiendaForm{
                     display: none;
                 }
-                .contenedorFormulario #tiendaForm2{
+                .contenedorFormulario .tiendaForm2{
                     display: inline;
                     margin: 0px;
                     padding: 0px;
                 }
-                .contenedorFormulario #tiendaForm2 table{
+                .contenedorFormulario .tiendaForm2 table{
 
                     margin: 0px;
                     padding: 0px;
                 }
-                .contenedorFormulario #tiendaForm2 table .col1{
+                .contenedorFormulario .tiendaForm2 table .col1{
 
                     margin: 0px;
                     padding: 0px;
