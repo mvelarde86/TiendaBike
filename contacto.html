@@ -64,16 +64,43 @@
                             
                         </table>
                         </form>
-                    </div>
-                
-                    <div class="contenedorDirecciones">
-                      <p>Horarios de L a S de 10hs. a 13hs. y de 14hs a 18hs.</p>
-                      <p><a href="https://www.instagram.com.ar"><img src="img/redes/instagram.png" width= 50px height=50px></a>Seguinos en Instagram. </p>
-                      <p><a href="https://www.whatsapp.com"><img src="img/redes/whatsapp.png" width= 50px height=50px></a> ( +54 9 ) 11 555-5555</p>  
-                      <p><a href="mailto:info@tiendabike.com.ar"><img src="img/redes/correo.png" width= 50px height=50px>info@tiendabike.com.ar</a></p>
-                      <p><a href=""><img src="img/redes/ubicacion.png" width= 50px height=50px></a>Av. Triunvirato 4150 CABA, Buenos Aires, Argentina.</p>        
+
+                        <form id="tiendaForm2" action="https://formspree.io/f/mvoyqvwk" method="POST">
+                            <table class="tabla">
+                            <tr><th>Contacto </th></tr>
+                            <tr><th class="col1"><label for="nombre"> Nombre: </label></th></tr> 
+                            <tr><th class="col1"><input class="input_borde" type="text" size="20" name="nombre" id="nombre" maxlength="25"><p class="input_error">El nombre debe contener</p></th></tr>
+                            <tr><th class="col1"><label for="apellido"> Apellido: </label></th></tr>
+                            <tr><th class="col1"><input class="input_borde" type="text" size="20" name="apellido" id="apellido" maxlength="25"><p class="input_error">El apellido debe contener</p></th></tr> 
+                            <tr><th class="col1"><label for="email"> Correo Electronico: </label></th></tr> 
+                            <tr><th class="col1"><input class="input_borde" type="email" size="20" name="email" id="email"><p class="input_error">El correo debe contener</p></th></tr>
+                            <tr><th class="col1"><label> Género: </label></th> </tr>
+                            <tr><th class="col1"><input type="radio" name="genero" id="genero" value="Masculino" ><label> Masculino </label> <br> <input type="radio" name="genero" id="genero" value="Femenino" ><label> Femenino </label> <br> <input type="radio" name="genero" id="genero" value="Otro" > <label> Otro </label> </th></tr>
+                            <tr><th class="col1"> Tipo de Consulta: </th> </tr>
+                            <tr><th class="col1" ><select name="consulta"  id="tipoConsulta" class="input_borde"><option value="pProductos"> Problemas con el Producto </option><option value="pSitioWeb"> Problemas con el SitioWeb </option><option value="pOtros"> Otros Problemas</option></select></th></tr>
+                            <tr><th class="col1"> Escriba su Consulta: </th> </tr>
+                            <tr><th class="col1"><textarea class="input_borde" name="comentario" id="comentario" rows="10" cols="23" placeholder="Escribe tu consulta..." ></textarea></th></tr>
+                            <tr><th class="botones" ><input type="submit" onclick="validarFormulario()" id="boton" value="Enviar Datos" ></th></tr>
+                            
+                        </table>
+                        </form>
+
 
                     </div>
+
+                
+                    <div class="contenedorDirecciones">
+                        <p>Horarios de L a S de 10hs. a 13hs. y de 14hs a 18hs.</p>
+                        <a href="https://www.instagram.com.ar"><img src="img/redes/instagram.png" width= 50px height=50px></a>
+                        <p>Seguinos en Instagram. </p>
+                        <a href="https://www.whatsapp.com"><img src="img/redes/whatsapp.png" width= 50px height=50px></a>
+                        <p> ( +54 9 ) 11 555-5555</p>  
+                        <a href="mailto:info@tiendabike.com.ar"><img src="img/redes/correo.png" width= 50px height=50px>
+                        <p>info@tiendabike.com.ar</a></p>
+                        <a href=""><img src="img/redes/ubicacion.png" width= 50px height=50px></a>
+                        <p>Av. Triunvirato 4150 CABA, Buenos Aires, Argentina.</p>        
+  
+                      </div>
                 
                     <div class="contenedorMapa">
 

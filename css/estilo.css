@@ -185,7 +185,7 @@ body{
             }        
 
             .contenedorContacto{
-                width: 100%;
+                width: auto;
                 max-width: 1328px;
                 margin: 0;
                 padding: 0;
@@ -202,7 +202,7 @@ body{
             }
 
             .contenedorFormulario{
-                
+                width: auto;
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 color: black;
@@ -215,6 +215,10 @@ body{
                 flex-direction: column;
                 
 
+            }
+
+            .contenedorFormulario #tiendaForm2{
+                display: none;
             }
 
             .contenedorFormulario .botones{
@@ -234,6 +238,7 @@ body{
             }
 
             .contenedorDirecciones{
+                width: 98%;
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 color: black;
@@ -260,6 +265,7 @@ body{
             }
 
             .contenedorMapa{
+                width: auto;
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 color: black;
@@ -304,6 +310,7 @@ body{
 
 
             .contenedorProveedores{
+                width: auto;
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 grid-area: proveedores;
@@ -318,7 +325,7 @@ body{
 
 
             .contenedorProveedores .gridLogos{
-                width: 100%;
+                width: auto;
                 max-width: 1328px;
                 margin: 0;
                 padding: 0;
@@ -671,7 +678,6 @@ body{
             }
 
             .contenedorProveedores .gridLogos{
-                width: 75%;
                 grid-template-areas: "marca01 marca02" 
                                      "marca03 marca04"
                                      "marca05 marca06" 
@@ -698,6 +704,26 @@ body{
  
         
         @media all and (max-width: 915px){
+
+
+            .contenedorLogo {
+                width: 95%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .contenedorLogo img{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: auto;
+            }
+
+
+            .contenedorDirecciones a{
+                margin-bottom: -40px;
+            }
 
             .Articulo #tituloPortada{
                 margin-left: 13%;   
@@ -730,6 +756,7 @@ body{
                 justify-content: center;
         
             }
+            
 
             .Articulo #tituloPortada1{
                 width: 98%;
@@ -763,6 +790,30 @@ body{
                     font-size: 15px;
                 }
 
+                .contenedorFormulario #tiendaForm{
+                    display: none;
+                }
+                .contenedorFormulario #tiendaForm2{
+                    display: inline;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .contenedorFormulario #tiendaForm2 table{
+
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .contenedorFormulario #tiendaForm2 table .col1{
+
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                .contenedorMapa iframe{
+                    width: 200px;
+                    height: 150px;
+                }
+
                 .gridProductos{
                     display: grid;
                     grid-template-columns: repeat(1 , auto);
@@ -783,6 +834,21 @@ body{
                                          "nav";
                 }
 
+                .contenedorProveedores .gridLogos{
+                    grid-template-areas: "marca01" 
+                                         "marca02" 
+                                         "marca03" 
+                                         "marca04"
+                                         "marca05" 
+                                         "marca06" 
+                                         "marca07" 
+                                         "marca08";
+                                         
+                }
+                .contenedorProveedores .gridLogos img{
+                    width: 150px;
+                    height: 75px;
+                }
         
         }
         
