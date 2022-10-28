@@ -133,7 +133,7 @@ body{
                      
                 
             }.Articulo{
-                width: auto;
+                width: 98.5%;
 
             }.Articulo a{
                 text-decoration: none;
@@ -142,68 +142,46 @@ body{
 
             }.contenedorImgPor1{
                 background:url(../img/portada1.png);
-                background-size: 100% 100%;
                 background-repeat:no-repeat;
                 background-size: cover;
                 height: 315px;
+                display: flex;
+                align-items: center;
 
             }
 
-        .contenedorImgPor2{
-            background:url(../img/portada2.png);
-            background-size: 100% 100%;
-            background-repeat:no-repeat;
-            background-size: cover;
-            height: 315px;
-        }
+            .contenedorImgPor2{
+                background:url(../img/portada2.png);
+                background-repeat:no-repeat;
+                background-size: cover;
+                height: 315px;
+                display: flex;
+                align-items: center;
 
-        .contenedorImgPor3{
-            background:url(../img/portada3.png);
-            background-size: 100% 100%;
-            background-repeat:no-repeat;
-            background-size: cover;
-            height: 315px;
-        }
+            }
+
+            .contenedorImgPor3{
+                background:url(../img/portada3.png);
+                background-repeat:no-repeat;
+                background-size: cover;
+                height: 315px;
+                display: flex;
+                align-items: center;
+
+            }
 
                 
                 
-            .Articulo #tituloPortada1{
-                    position: relative;
+            .Articulo #tituloPortada{
                     font-size: 35px;
                     letter-spacing: 1px;
                     background-color: rgba(240, 248, 255, 0.479);
                     text-decoration: underline;
-                    margin-top: 10%;
-                    width: 45%;
+                    width: 48%;
                     color: black;
-                    text-align: center;    
-
-                }.Articulo #portada{
-                    position: absolute;
-                    width: 1630px;
-                    height: 355px;
-
-                }.Articulo #tituloPortada2{
-                    position: relative;
-                    font-size: 35px;
-                    letter-spacing: 1px;
-                    background-color: rgba(240, 248, 255, 0.479);
-                    text-decoration: underline;
-                    width: 45%;
-                    color: black;
-                    text-align: center;
-
-                }.Articulo #tituloPortada3{
-                    position: relative;
-                    font-size: 35px;
-                    letter-spacing: 1px;
-                    background-color: rgba(240, 248, 255, 0.479);
-                    text-decoration: underline;
-                    width: 45%;
-                    color: black;
-                    text-align: center;
-
-                }                
+                    text-align: center; 
+                    height: 120px;    
+            }        
 
             .contenedorContacto{
                 width: 100%;
@@ -212,8 +190,8 @@ body{
                 padding: 0;
                 
                 display: grid;
-                grid-template-columns: repeat(2 , 1 fr);
-                grid-template-rows: repeat(2, 1 fr);
+                grid-template-columns: repeat(2 , auto);
+                grid-template-rows: repeat(2, auto);
                
                 grid-template-areas: "formulario direcciones"
                                      "formulario mapa";
@@ -302,8 +280,8 @@ body{
                 margin: 0;
                 padding: 0;
                 display: grid;
-                grid-template-columns: repeat(1 , 1 fr);
-                grid-template-rows: repeat(2, 1 fr);
+                grid-template-columns: repeat(1 , auto);
+                grid-template-rows: repeat(2, auto);
                 grid-template-areas: "historia"
                                      "proveedores";
 
@@ -344,8 +322,8 @@ body{
                 margin: 0;
                 padding: 0;
                 display: grid;
-                grid-template-columns: repeat(4 , 1 fr);
-                grid-template-rows: repeat(2, 1 fr);
+                grid-template-columns: repeat(4 , auto);
+                grid-template-rows: repeat(2, auto);
                 grid-template-areas: "marca01 marca02 marca03 marca04"
                                      "marca05 marca06 marca07 marca08";
 
@@ -459,8 +437,8 @@ body{
             .menuProductos .gridMenuProducto{
                 width: 95%;
                 display: grid;
-                grid-template-columns: repeat(1 , 1 fr);
-                grid-template-rows: repeat(3, 1 fr);
+                grid-template-columns: repeat(1 , auto);
+                grid-template-rows: repeat(3, auto);
                 grid-template-areas: "Accesorio"
                                      "Accesorio"
                                      "Accesorio"
@@ -472,8 +450,8 @@ body{
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 display: grid;
-                grid-template-columns: repeat(1 , 1 fr);
-                grid-template-rows: repeat(4, 1 fr);  
+                grid-template-columns: repeat(1 , auto);
+                grid-template-rows: repeat(4, auto);  
                 grid-template-areas: "img"
                                      "des";
                 
@@ -512,8 +490,8 @@ body{
             .gridProductos{
                 width: 100%;
                 display: grid;
-                grid-template-columns: repeat(3 , 1 fr);
-                grid-template-rows: repeat(6, 1 fr);
+                grid-template-columns: repeat(3 , auto);
+                grid-template-rows: repeat(6, auto);
                 grid-template-areas: "titulo titulo titulo"
                                      "Producto Producto Producto"
                                      "Producto Producto Producto"
@@ -536,8 +514,8 @@ body{
                 background-color: rgba(255, 255, 255, 0.678);
                 border-radius: 50px;
                 display: grid;
-                grid-template-columns: repeat(1 , 1 fr);
-                grid-template-rows: repeat(4, 1 fr);  
+                grid-template-columns: repeat(1 , auto);
+                grid-template-rows: repeat(4, auto);  
                 grid-template-areas: "img"
                                      "des"
                                      "inf"
@@ -642,8 +620,8 @@ body{
                 display: flex;
                 justify-content: center;
                 display: grid;
-                grid-template-columns: repeat(2 , 1 fr);
-                grid-template-rows: repeat(8, 1 fr);
+                grid-template-columns: repeat(2 , auto);
+                grid-template-rows: repeat(8, auto);
                 grid-template-areas: "titulo titulo"
                                      "Producto Producto"
                                      "Producto Producto"
@@ -705,7 +683,14 @@ body{
  
         
         @media all and (max-width: 915px){
-.contenedorTitulo h1{
+
+            .Articulo #tituloPortada{
+                margin-left: 13%;   
+                width: 75%; 
+                font-size: 15px;
+            }
+            
+            .contenedorTitulo h1{
                 margin: 0;
                 padding: 0;
                 font-size: 25px;
@@ -763,8 +748,8 @@ body{
 
                 .gridProductos{
                     display: grid;
-                    grid-template-columns: repeat(1 , 1 fr);
-                    grid-template-rows: repeat(14, 1 fr);
+                    grid-template-columns: repeat(1 , auto);
+                    grid-template-rows: repeat(14, auto);
                     grid-template-areas: "titulo"
                                          "Producto" 
                                          "Producto"
