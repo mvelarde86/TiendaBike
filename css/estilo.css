@@ -109,19 +109,20 @@ body{
             
         
             }.contenedorPublicidad1{
-                text-align: center;
+                display: flex;
+                align-content: center;
 
-                }.contenedorPublicidad1 img{
-                    width: 150px;
-                    height: 100px;
+                }.contenedorPublicidad1 #imag{
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    
 
-            }.contenedorPublicidad2{
-             
-                text-align: center;
-
-                }.contenedorPublicidad2 img{
-                    width: 150px;
-                    height: 100px;
+                }.contenedorPublicidad1 #imag2{
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
                 
         }.contenedorCuerpo{
                 margin: 1%;
@@ -354,7 +355,7 @@ body{
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                
+                  
             }
             
             .contenedorProveedores .marca03{
@@ -415,8 +416,8 @@ body{
                 justify-content: center;
                 flex-direction: column;
                 
-            }
-
+            } 
+            
             .menuProductos{
                 background: rgba(241, 213, 160, 0.473);
                 margin: 1%;
@@ -443,7 +444,7 @@ body{
                                      "Accesorio"
                                      "Accesorio"
                                      "Accesorio";
-                ;
+                
             }
 
             .menuProductos .gridMenuProducto .Producto{
@@ -616,6 +617,20 @@ body{
                 justify-content: center;
         
             }
+
+
+            .contenedorPublicidad1 #imag{
+                display: none;
+                
+            }
+
+
+            .contenedorPublicidad1 #imag2{
+                display: inline;
+                
+            }
+
+
             .gridProductos{
                 display: flex;
                 justify-content: center;
@@ -717,6 +732,8 @@ body{
             }
 
             .Articulo #tituloPortada1{
+                width: 98%;
+                height: 98%;
                 font-size: 15px;}
 
             .Articulo #tituloPortada2{

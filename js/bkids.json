@@ -1,0 +1,22 @@
+{
+    "bicicletas":
+        [{
+            "nombre":"Bicicleta Modelo1",
+            "pathImg":"img/Bicicletas/bmb/1.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo1.pdf",
+            "precio":"$70.000,00"
+        },
+        {
+            "nombre":"Bicicleta Modelo2",
+            "pathImg":"img/Bicicletas/bmb/1.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo1.pdf",
+            "precio":"$70.000,00"
+        },
+        {
+            "nombre":"Bicicleta Modelo3",
+            "pathImg":"img/Bicicletas/bmb/1.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo1.pdf",
+            "precio":"$70.000,00"
+        }
+        ]
+}
