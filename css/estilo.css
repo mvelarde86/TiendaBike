@@ -60,6 +60,9 @@ body{
                     font-weight: 300;
                     line-height: 1.8;                   
                     
+                }
+                .contenedorNav a i{
+                    margin: 0;
 
             }.contenedorRedes{
                 flex: 1 1 auto;
@@ -742,6 +745,9 @@ body{
                 padding: 0;
                 width: 100%;
                 height: auto;
+            }
+            .contenedorNav a{
+                display: block;
             }
 
 
