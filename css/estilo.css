@@ -10,15 +10,20 @@ font-family: 'Montserrat', sans-serif;
 
 body{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .contenedorPadre{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
 
     }.contenedorHeader{
+        margin: 0;
+        padding: 0;
         background-image: url(../img/Fondo/fondoHeader.jpg);
         background-size:auto;
         background-repeat: no-repeat;
@@ -93,6 +98,8 @@ body{
 
 
     .contenedorCentro{
+        margin: 0;
+        padding: 0;
         width: 98%;
         background-image: url(../img/Fondo/fondoCentro.jpg);
         background-size: cover;
@@ -507,6 +514,20 @@ body{
                                      "Producto Producto Producto"
                                      "nav nav nav";
             }
+            
+
+            #container {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3 , auto);
+                grid-template-rows: repeat(6, auto);
+                grid-template-areas: "titulo titulo titulo"
+                                     "Producto Producto Producto"
+                                     "Producto Producto Producto"
+                                     "Producto Producto Producto"
+                                     "Producto Producto Producto"
+                                     "nav nav nav";
+            }
 
             .gridProductos .tituloGrid{
                 grid-area: titulo;
@@ -587,12 +608,15 @@ body{
 
 
     .contenedorFooter{
-        border-top: black solid;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        border-top: black solid;  
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
+        width: 98%;
 
         }.contenedorDerechos{
             
@@ -833,6 +857,28 @@ body{
                                          "Producto"
                                          "nav";
                 }
+
+
+                #container {
+                    display: grid;
+                    grid-template-columns: repeat(1 , auto);
+                    grid-template-rows: repeat(14, auto);
+                    grid-template-areas: "titulo"
+                                            "Producto" 
+                                            "Producto"
+                                            "Producto" 
+                                            "Producto"
+                                            "Producto" 
+                                            "Producto"
+                                            "Producto" 
+                                            "Producto"
+                                            "Producto" 
+                                            "Producto"
+                                            "Producto" 
+                                            "Producto"
+                                            "nav";
+                }
+
 
                 .contenedorProveedores .gridLogos{
                     grid-template-areas: "marca01" 

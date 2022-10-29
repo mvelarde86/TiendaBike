@@ -8,15 +8,51 @@
         },
         {
             "nombre":"Bicicleta Modelo2",
-            "pathImg":"img/Bicicletas/bmb/1.png",
-            "pathPdf":"info/bmb/Info_Bicicleta_Modelo1.pdf",
-            "precio":"$70.000,00"
+            "pathImg":"img/Bicicletas/bmb/2.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo2.pdf",
+            "precio":"$80.000,00"
         },
         {
             "nombre":"Bicicleta Modelo3",
-            "pathImg":"img/Bicicletas/bmb/1.png",
-            "pathPdf":"info/bmb/Info_Bicicleta_Modelo1.pdf",
-            "precio":"$70.000,00"
+            "pathImg":"img/Bicicletas/bmb/3.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo3.pdf",
+            "precio":"$90.000,00"
+        },
+        {
+            "nombre":"Bicicleta Modelo4",
+            "pathImg":"img/Bicicletas/bmb/7.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo4.pdf",
+            "precio":"$100.000,00"
+        },
+        {
+            "nombre":"Bicicleta Modelo5",
+            "pathImg":"img/Bicicletas/bmb/8.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo5.pdf",
+            "precio":"$75.000,00"
+        },
+        {
+            "nombre":"Bicicleta Modelo6",
+            "pathImg":"img/Bicicletas/bmb/9.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo6.pdf",
+            "precio":"$88.999,00"
+        },
+        {
+            "nombre":"Bicicleta Modelo7",
+            "pathImg":"img/Bicicletas/bmb/2.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo2.pdf",
+            "precio":"$80.000,00"
+        },
+        {
+            "nombre":"Bicicleta Modelo8",
+            "pathImg":"img/Bicicletas/bmb/2.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo2.pdf",
+            "precio":"$80.000,00"
+        },
+        {
+            "nombre":"Bicicleta Modelo9",
+            "pathImg":"img/Bicicletas/bmb/2.png",
+            "pathPdf":"info/bmb/Info_Bicicleta_Modelo2.pdf",
+            "precio":"$80.000,00"
         }
         ]
 }
