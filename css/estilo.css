@@ -141,6 +141,8 @@ body{
                 width: 78%;
                 flex-direction: row;
                 flex-wrap: wrap;
+            
+                
                      
                 
             }.Articulo{
@@ -443,6 +445,47 @@ body{
                 flex-direction: row;
                 flex-wrap: wrap;
             }
+
+            .menuProductos #bicis{
+                width: 0;
+                height: 0;
+                margin: 5px;
+                padding: 5px;
+            }
+            .contenedorCuerpo #bici{
+                width: 0;
+                height: 0;
+                margin:0;
+                padding: 0;
+            }
+            .menuProductos #accesorios{
+                width: 0;
+                height: 0;
+                margin: 5px;
+                padding: 5px;
+            }
+            .contenedorCuerpo #accesorio{
+                width: 0;
+                height: 0;
+                margin:0;
+                padding: 0;
+            }
+
+            .contenedorCuerpo #nosotros{
+                width: 0;
+                height: 0;
+                margin:0;
+                padding: 0;
+            }
+
+            .contenedorCuerpo #contacto{
+                width: 0;
+                height: 0;
+                margin: 0px;
+                padding: 0px;
+            }
+
+
 
             .menuProductos .tituloMenu{
                 display: flex;
